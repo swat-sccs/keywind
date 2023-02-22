@@ -12,8 +12,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.blue,
-        secondary: colors.gray,
+        'blue': '#31425F',
+        'purple': '#7e5bef',
+        'pink': '#ff49db',
+        'orange': '#F46523',
+        'green': '#13ce66',
+        'yellow': '#ffc82c',
+        'gray-dark': '#273444',
+        'gray': '#8492a6',
+        'gray-light': '#d3dce6',
+
+        primary: colors.orange,
+        secondary: colors.blue,
 
         provider: {
           bitbucket: '#0052CC',
@@ -31,6 +41,9 @@ module.exports = {
           stackoverflow: '#F58025',
           twitter: '#1DA1F2',
         },
+      },
+      fontFamily: {
+        sans: ['Raleway', 'sans-serif'],
       },
     },
   },
