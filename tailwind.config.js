@@ -12,18 +12,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'blue': '#31425F',
-        'purple': '#7e5bef',
-        'pink': '#ff49db',
-        'orange': '#F46523',
-        'green': '#13ce66',
-        'yellow': '#ffc82c',
-        'gray-dark': '#273444',
-        'gray': '#8492a6',
-        'gray-light': '#d3dce6',
+        navy: 'hsl(216, 33%, 25%)',
+        orange: 'hsl(16, 75%, 67%)',
 
-        primary: colors.orange,
-        secondary: colors.blue,
+        primary: colors.navy,
+        secondary: colors.orange,
 
         provider: {
           bitbucket: '#0052CC',
