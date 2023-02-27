@@ -1,5 +1,4 @@
 const colors = require('tailwindcss/colors');
-
 /**
  * @type { import('tailwindcss').Config }
  */
@@ -12,11 +11,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        navy: 'hsl(216, 33%, 25%)',
-        base: 'hsl(56, 6%, 94%)',
+        blue: 'hsl(216, 33%, 25%)',
+        purple: '#7e5bef',
+        pink: '#ff49db',
+        orange: '#F46523',
+        green: '#13ce66',
+        yellow: '#ffc82c',
+        'gray-dark': '#273444',
+        gray: 'hsl(56, 6%, 94%)',
+        'gray-light': '#d3dce6',
 
-        primary: colors.navy,
-        secondary: colors.base,
+        primary: colors.blue,
+        secondary: colors.gray,
 
         provider: {
           bitbucket: '#0052CC',
