@@ -5,3 +5,6 @@ node_modules/
 
 # misc
 .DS_Store
+
+# build output files
+theme/keywind/login/resources/dist/assets/
