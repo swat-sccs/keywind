@@ -13,10 +13,10 @@ module.exports = {
     extend: {
       colors: {
         navy: 'hsl(216, 33%, 25%)',
-        orange: 'hsl(16, 75%, 67%)',
+        base: 'hsl(56, 6%, 94%)',
 
         primary: colors.navy,
-        secondary: colors.orange,
+        secondary: colors.base,
 
         provider: {
           bitbucket: '#0052CC',
