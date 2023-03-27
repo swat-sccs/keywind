@@ -37,8 +37,8 @@
                                     ${kcSanitize(message.summary)?no_esc}
                                 </@alert.kw>
                             </#if>
-                            <h1 class="text-blue mb-4">Sign in to <strong>SCCS</strong></h1>
-                            <p>Use your SCCS account to sign in, not your Swarthmore ITS account. Don't have a SCCS account? <a href="/account/create">Create&nbsp;one</a>.</p>
+                            <h1 class="text-blue mb-4">Sign in to <strong><@link.kw color="primary" href="https://www.sccs.swarthmore.edu/">SCCS</@link.kw></strong></h1> <!-- TODO: set up kc account creation flow -->
+                            <p>Use your SCCS account to sign in, not your Swarthmore ITS account. Don't have a SCCS account? <@link.kw href="https://www.sccs.swarthmore.edu/account/create">Create&nbsp;one</@link.kw>.</p>
                             <#nested "form">
                             <#if displayRequiredFields>
                                 <p class="text-secondary-600 text-sm">
