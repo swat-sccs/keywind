@@ -10,4 +10,4 @@ node_modules/
 .DS_Store
 
 # build output files
-theme/keywind/login/resources/dist/assets/
+theme/keywind/login/resources/dist/
