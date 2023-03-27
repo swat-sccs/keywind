@@ -1,6 +1,5 @@
 <#import "template.ftl" as layout>
 <#import "components/atoms/button.ftl" as button>
-<#import "components/atoms/button-group.ftl" as buttonGroup>
 <#import "components/atoms/checkbox.ftl" as checkbox>
 <#import "components/atoms/form.ftl" as form>
 <#import "components/atoms/input.ftl" as input>
@@ -57,17 +56,15 @@
               />
             </#if>
             <#if realm.resetPasswordAllowed>
-              <@link.kw color="primary" href=url.loginResetCredentialsUrl size="small">
+              <@link.kw color="default" href=url.loginResetCredentialsUrl size="small">
                 ${msg("doForgotPassword")}
               </@link.kw>
             </#if>
           </div>
         </#if>
-        <@buttonGroup.kw>
-          <@button.kw color="primary" name="login" type="submit">
-            ${msg("doLogIn")}
-          </@button.kw>
-        </@buttonGroup.kw>
+        <@button.kw color="primary" name="login" type="submit">
+          ${msg("doLogIn")}
+        </@button.kw>
       </@form.kw>
     </#if>
     <#if realm.password && social.providers??>

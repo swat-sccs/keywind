@@ -1,6 +1,6 @@
 <#macro kw rest...>
   <form
-    class="m-0 space-y-4"
+    class="m-0 space-y-4 mb-4"
 
     <#list rest as attrName, attrValue>
       ${attrName}="${attrValue}"

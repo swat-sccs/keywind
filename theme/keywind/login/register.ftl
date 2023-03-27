@@ -1,6 +1,5 @@
 <#import "template.ftl" as layout>
 <#import "components/atoms/button.ftl" as button>
-<#import "components/atoms/button-group.ftl" as buttonGroup>
 <#import "components/atoms/form.ftl" as form>
 <#import "components/atoms/input.ftl" as input>
 <#import "components/atoms/link.ftl" as link>
@@ -74,11 +73,9 @@
       <#if recaptchaRequired??>
         <div class="g-recaptcha" data-sitekey="${recaptchaSiteKey}" data-size="compact"></div>
       </#if>
-      <@buttonGroup.kw>
         <@button.kw color="primary" type="submit">
           ${msg("doRegister")}
         </@button.kw>
-      </@buttonGroup.kw>
     </@form.kw>
   <#elseif section="nav">
     <@link.kw color="secondary" href=url.loginUrl size="small">

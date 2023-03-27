@@ -1,7 +1,6 @@
 <#import "template.ftl" as layout>
 <#import "components/atoms/alert.ftl" as alert>
 <#import "components/atoms/button.ftl" as button>
-<#import "components/atoms/button-group.ftl" as buttonGroup>
 <#import "components/atoms/checkbox.ftl" as checkbox>
 <#import "components/atoms/form.ftl" as form>
 
@@ -54,7 +53,6 @@
           required="required"
           x\-ref="confirmationCheck"
         />
-        <@buttonGroup.kw>
           <#if isAppInitiatedAction??>
             <@button.kw color="primary" type="submit">
               ${msg("recovery-codes-action-complete")}
@@ -73,7 +71,6 @@
               ${msg("recovery-codes-action-complete")}
             </@button.kw>
           </#if>
-        </@buttonGroup.kw>
       </@form.kw>
     </div>
   </#if>

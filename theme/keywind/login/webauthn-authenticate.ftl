@@ -1,6 +1,5 @@
 <#import "template.ftl" as layout>
 <#import "components/atoms/button.ftl" as button>
-<#import "components/atoms/button-group.ftl" as buttonGroup>
 
 <@layout.registrationLayout script="dist/webAuthnAuthenticate.js"; section>
   <#if section="title">
@@ -48,11 +47,9 @@
           </#list>
         </#if>
       </#if>
-      <@buttonGroup.kw>
-        <@button.kw @click="webAuthnAuthenticate" color="primary" type="button">
-          ${kcSanitize(msg("webauthn-doAuthenticate"))}
-        </@button.kw>
-      </@buttonGroup.kw>
+      <@button.kw @click="webAuthnAuthenticate" color="primary" type="button">
+        ${kcSanitize(msg("webauthn-doAuthenticate"))}
+      </@button.kw>
     </div>
   </#if>
 </@layout.registrationLayout>

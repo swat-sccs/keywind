@@ -9,12 +9,29 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/forms')],
   theme: {
+    fontFamily: {
+        'display': ['Raleway'],
+        'body': ['Raleway'],
+        'sans': ['Raleway'],
+        'serif': ['Raleway'],
+    },
     extend: {
         colors: {
             blue: '#31425F',
             purple: '#7e5bef',
             pink: '#ff49db',
-            orange: '#F46523',
+            orange: {
+                50: '#E9946E',
+                100: '#E9946E',
+                200: '#E9946E',
+                300: '#E9946E',
+                400: '#E9946E',
+                500: '#E9946E',
+                600: '#F46523',
+                700: '#F46523',
+                800: '#F46523',
+                900: '#F46523',
+            },
             green: '#13ce66',
             yellow: '#ffc82c',
             'gray-dark': '#273444',

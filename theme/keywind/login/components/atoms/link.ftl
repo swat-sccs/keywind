@@ -7,7 +7,7 @@
       <#assign colorClass="text-secondary-600 hover:text-secondary-900">
       <#break>
     <#default>
-      <#assign colorClass="text-primary-600 hover:text-primary-500">
+      <#assign colorClass="text-orange-600 hover:text-orange-500">
   </#switch>
 
   <#switch size>

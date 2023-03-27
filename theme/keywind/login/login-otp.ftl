@@ -1,6 +1,5 @@
 <#import "template.ftl" as layout>
 <#import "components/atoms/button.ftl" as button>
-<#import "components/atoms/button-group.ftl" as buttonGroup>
 <#import "components/atoms/form.ftl" as form>
 <#import "components/atoms/input.ftl" as input>
 <#import "components/atoms/radio.ftl" as radio>
@@ -40,11 +39,9 @@
         name="otp"
         type="text"
       />
-      <@buttonGroup.kw>
-        <@button.kw color="primary" name="submitAction" type="submit">
-          ${msg("doLogIn")}
-        </@button.kw>
-      </@buttonGroup.kw>
+      <@button.kw color="primary" name="submitAction" type="submit">
+        ${msg("doLogIn")}
+      </@button.kw>
     </@form.kw>
   </#if>
 </@layout.registrationLayout>
