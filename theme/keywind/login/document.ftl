@@ -10,19 +10,19 @@
 
   <#if properties.meta?has_content>
     <#list properties.meta?split(" ") as meta>
-      <meta name="${meta?split('==')[0]}" content="${meta?split('==')[1]}"/>
+      <meta name="${meta?split('==')[0]}" content="${meta?split('==')[1]}">
     </#list>
   </#if>
 
   <#if properties.favicons?has_content>
     <#list properties.favicons?split(" ") as favicon>
-      <link href="${url.resourcesPath}/${favicon?split('==')[0]}" rel="${meta?split('==')[1]}">
+      <link href="${url.resourcesPath}/${favicon?split('==')[0]}" rel="${favicon?split('==')[1]}">
     </#list>
   </#if>
 
   <#if properties.styles?has_content>
     <#list properties.styles?split(" ") as style>
-      <link href="${url.resourcesPath}/${style}" rel="stylesheet" />
+      <link href="${url.resourcesPath}/${style}" rel="stylesheet">
     </#list>
   </#if>
 

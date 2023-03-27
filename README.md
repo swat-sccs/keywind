@@ -6,19 +6,24 @@ Keywind is a component-based Keycloak Login Theme built with [Tailwind CSS](http
 
 ### Styled Pages
 
+- Error
 - Login
 - Login Config TOTP
 - Login IDP Link Confirm
 - Login OAuth Grant
 - Login OTP
+- Login Page Expired
+- Login Password
 - Login Recovery Authn Code Config
 - Login Recovery Authn Code Input
 - Login Reset Password
 - Login Update Password
 - Login Update Profile
+- Login Username
 - Logout Confirm
 - Register
 - Select Authenticator
+- Terms and Conditions
 - WebAuthn Authenticate
 - WebAuthn Error
 - WebAuthn Register
@@ -26,6 +31,7 @@ Keywind is a component-based Keycloak Login Theme built with [Tailwind CSS](http
 ### Identity Provider Icons
 
 - Bitbucket
+- Discord
 - Facebook
 - GitHub
 - GitLab
@@ -97,4 +103,10 @@ When you're ready to deploy your own theme, run the build command to generate a 
 ```bash
 pnpm install
 pnpm build
+```
+
+To deploy a theme as an archive, create a JAR archive with the theme resources.
+
+```bash
+pnpm build:jar
 ```

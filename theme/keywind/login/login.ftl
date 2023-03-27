@@ -68,9 +68,6 @@
         </@button.kw>
       </@form.kw>
     </#if>
-    <#if realm.password && social.providers??>
-      <@identityProvider.kw providers=social.providers />
-    </#if>
   <#elseif section="info">
     <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
       <div class="text-center">
@@ -79,6 +76,10 @@
           ${msg("doRegister")}
         </@link.kw>
       </div>
+    </#if>
+  <#elseif section="socialProviders">
+    <#if realm.password && social.providers??>
+      <@identityProvider.kw providers=social.providers />
     </#if>
   </#if>
 </@layout.registrationLayout>
