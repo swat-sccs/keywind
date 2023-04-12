@@ -18,7 +18,7 @@
   <#if section="header">
     ${msg("loginAccountTitle")}
   <#elseif section="form">
-    <p>Use your SCCS account to sign in, not your Swarthmore ITS account. Don't have a SCCS account? <@link.kw href="https://www.sccs.swarthmore.edu/account/create">Create&nbsp;one</@link.kw>.</p>
+    <p>Use your SCCS account to sign in, not your Swarthmore ITS account. Don't have a SCCS account? <a href="https://www.sccs.swarthmore.edu/account/create">Create one</a>.</p>
     <#if realm.password>
       <@form.kw
         action=url.loginAction

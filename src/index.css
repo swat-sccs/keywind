@@ -98,4 +98,8 @@
         margin-top: 6px;
         margin-bottom: 6px;
     }
+
+    a {
+        color: theme('colors.orange.600');
+    }
 }

@@ -15,6 +15,15 @@ module.exports = {
             'sans': ['Raleway'],
             'serif': ['Raleway'],
         },
+        borderRadius: {
+            'none': '0',
+            'sm': '4px',
+            DEFAULT: '4px',
+            'md': '4px',
+            'lg': '4px',
+            'full': '9999px',
+            'large': '4px',
+        },
         extend: {
             colors: {
                 blue: '#31425F',
