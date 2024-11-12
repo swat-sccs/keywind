@@ -30,17 +30,17 @@
             </header>
             <main class="flex-fill">
                 <div class="container">
-                    <div class="row" style="max-width: 768px ml-0">
-                        <div class="col-md-8 p-0">
+                    <div class="row max-w-xl">
+                        <div class="col-md-8 md:pl-8">
                             <#if displayMessage && message?has_content && (message.type != "warning" || !isAppInitiatedAction??)>
                                 <@alert.kw color=message.type>
                                     ${kcSanitize(message.summary)?no_esc}
                                 </@alert.kw>
                             </#if>
-                            <h1 class="text-blue mb-4">Welcome to <strong><@link.kw color="primary" href="https://www.sccs.swarthmore.edu/">SCCS</@link.kw></strong></h1> <!-- TODO: set up kc account creation flow -->
+                            <h1 class="text-blue dark:text-white mb-4">Welcome to <strong><@link.kw color="primary" href="https://www.sccs.swarthmore.edu/"><div class="sccs">SCCS</div></@link.kw></strong></h1> <!-- TODO: set up kc account creation flow -->
                             <#nested "form">
                             <#if displayRequiredFields>
-                                <p class="text-secondary-600 text-sm">
+                                <p class="text-secondary-600 dark:text-white text-sm">
                                     * ${msg("requiredFields")}
                                 </p>
                             </#if>
@@ -59,9 +59,9 @@
                     </div>
                 </div>
             </main>
-            <footer class="footer mt-auto py-3 bg-blue">
+            <footer class="footer mt-auto py-3 bg-blue dark:bg-secondary-800">
                 <div class="container">
-                    <span class="small text-white">© 2023 Swarthmore College Computer Society | <@link.kw href="https://www.sccs.swarthmore.edu/docs/policy" size="small">Usage &amp; Data Policy</@link.kw>
+                    <span class="small text-white">© 2024 Swarthmore College Computer Society | <@link.kw href="https://www.sccs.swarthmore.edu/docs/policy" size="small">Usage &amp; Data Policy</@link.kw>
     | Problems with this website? Email&nbsp;<@link.kw href="mailto:staff@sccs.swarthmore.edu" size="small">staff@sccs.swarthmore.edu</@link.kw>.</span>
                 </div>
             </footer>

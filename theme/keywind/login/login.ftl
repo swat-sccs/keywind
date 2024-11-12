@@ -48,7 +48,7 @@
           type="password"
         />
         <#if realm.rememberMe && !usernameEditDisabled?? || realm.resetPasswordAllowed>
-          <div class="flex items-center justify-between">
+          <div class="flex items-center justify-between dark:text-white">
             <#if realm.rememberMe && !usernameEditDisabled??>
               <@checkbox.kw
                 checked=login.rememberMe??

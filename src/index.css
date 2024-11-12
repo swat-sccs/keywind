@@ -60,6 +60,42 @@
         border-radius: 4px;
         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     }
+
+    @media (prefers-color-scheme: dark) {
+        .form-control {
+            background-color: #0B0F18;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+
+        .form-control:focus {
+            background-color: #0B0F18;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+
+        input {
+            color: #fff !important;
+            border-color: #fff !important;
+        }
+        label {
+            color: #fff !important;
+        }
+        button {
+            background-color: #131B29 !important;
+        }
+        p {
+            color: #fff !important;
+        }
+
+        [type=checkbox], [type=radio] {
+            background-color: #131B29 !important;
+        }
+
+        .sccs {
+            color: #f46523 !important;
+        }
+    }
     
     .form-floating {
         position: relative;
